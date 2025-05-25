@@ -1,15 +1,18 @@
-function navbar() {
+import './Navbar.css'
+import { Link } from 'react-router-dom'
+
+function Navbar() {
     return (
-        <nav className="bg-gray-800 p-4">
-        <div className="container mx-auto flex justify-between items-center">
-            <div className="text-white text-lg font-bold">My Portfolio</div>
-            <ul className="flex space-x-4">
-            <li><a href="/" className="text-gray-300 hover:text-white">Home</a></li>
-            <li><a href="about" className="text-gray-300 hover:text-white">About</a></li>
-            <li><a href="contact" className="text-gray-300 hover:text-white">Contact</a></li>
-            </ul>
-        </div>
+        <nav className="navbar">
+            <div className="navbar-content">
+                <div className="navbar-title">Miro Airas</div>
+                <ul>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
+                </ul>
+            </div>
         </nav>
     );
 }
-export default navbar;
+export default Navbar;
