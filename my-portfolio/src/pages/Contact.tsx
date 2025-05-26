@@ -1,11 +1,19 @@
+import './pages.css'
+import { ContactUs } from '../services/emailsend';
 function contact() {
+
+
+
 
     return (
       <div>
-        <h1>
-            Contact Me
-        </h1>
+   
+      <ContactUs/>
+   
       </div>
     );
 }
 export default contact;
+
+
+
